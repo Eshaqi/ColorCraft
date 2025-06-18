@@ -37,24 +37,39 @@ You can try the app here:
 
 ```
 ColorCraft/
-├── index.html            # Main HTML file
-├── styles/               # CSS styles
-│   └── main.css
 ├── components/           # JS UI components
-│   ├── searchBar.js
 │   ├── colorCard.js
-│   ├── favorites.js
 │   ├── download.js
+│   ├── favorites.js
+│   ├── history.js
+│   ├── searchBar.js
+│   ├── searchHandler.js
 │   ├── theme.js
-│   └── searchHandler.js
+│   └── toast.js
 ├── utils/                # Utility scripts
-│   ├── debounce.js
-│   ├── domHelper.js
 │   ├── clearHandler.js
+│   ├── colorParser.js
+│   ├── constants.js
+│   ├── debounce.js
+│   ├── dom.js
+│   ├── domHelper.js
+│   ├── emptyMessage.js
 │   └── loader.js
+│   └── storage.js
+│   └── utils.js
+├── .prettierignore
+├── 404.html
 ├── app.js                # App entry point
-├── README.md             # Project documentation
+├── app.min.js
+├── favicon.png
+├── index.html            # Main HTML file
 └── LICENSE               # Open source license
+├── manifest.json
+├── minify.sh
+├── README.md             # Project documentation
+├── service-worker.js
+├── style.css               # CSS styles
+├── style.min.css 
 ```
 
 ## ⚠️ Disclaimer
