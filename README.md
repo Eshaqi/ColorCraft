@@ -28,7 +28,7 @@
 ## 🖥️ Live Demo
 
 You can try the app here:  
-👉 [https://your-username.github.io/colorcraft](https://your-username.github.io/colorcraft)
+👉 [https://github.com/Eshaqi/ColorCraft](https://github.com/Eshaqi/ColorCraft)
 
 > _(Replace with your GitHub Pages link if you host it)_
 
