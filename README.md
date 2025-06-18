@@ -28,29 +28,49 @@
 ## 🖥️ Live Demo
 
 You can try the app here:  
-👉 [https://your-username.github.io/colorcraft](https://your-username.github.io/colorcraft)
+👉 [https://eshaqi.github.io/ColorCraft](https://eshaqi.github.io/ColorCraft)
 
-> _(Replace with your GitHub Pages link if you host it)_
 
 ---
 
 ## 📂 Project Structure
 
-colorcraft/
-│
-├── index.html # Main HTML file
-├── styles/ # CSS styles
-│ └── main.css
-├── components/ # JS UI components
-│ ├── searchBar.js
-│ ├── colorCard.js
-│ └── ...
-├── utils/ # Utility scripts
-│ ├── debounce.js
-│ └── domHelper.js
-├── app.js # App entry point
-├── README.md # Project documentation
-└── LICENSE # Open source license
+```
+ColorCraft/
+├── components/           # JS UI components
+│   ├── colorCard.js
+│   ├── download.js
+│   ├── favorites.js
+│   ├── history.js
+│   ├── searchBar.js
+│   ├── searchHandler.js
+│   ├── theme.js
+│   └── toast.js
+├── utils/                # Utility scripts
+│   ├── clearHandler.js
+│   ├── colorParser.js
+│   ├── constants.js
+│   ├── debounce.js
+│   ├── dom.js
+│   ├── domHelper.js
+│   ├── emptyMessage.js
+│   └── loader.js
+│   └── storage.js
+│   └── utils.js
+├── .prettierignore
+├── 404.html
+├── app.js                # App entry point
+├── app.min.js
+├── favicon.png
+├── index.html            # Main HTML file
+└── LICENSE               # Open source license
+├── manifest.json
+├── minify.sh
+├── README.md             # Project documentation
+├── service-worker.js
+├── style.css               # CSS styles
+├── style.min.css 
+```
 
 ## ⚠️ Disclaimer
 
