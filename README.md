@@ -28,9 +28,8 @@
 ## 🖥️ Live Demo
 
 You can try the app here:  
-👉 [https://Eshaqi.github.io/ColorCraft](https://Eshaqi.github.io/ColorCraft)
+👉 [https://eshaqi.github.io/ColorCraft](https://eshaqi.github.io/ColorCraft)
 
-> _(Replace with your GitHub Pages link if you host it)_
 
 ---
 
