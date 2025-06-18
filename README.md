@@ -35,21 +35,27 @@ You can try the app here:
 
 ## 📂 Project Structure
 
-colorcraft/
-│
-├── index.html # Main HTML file
-├── styles/ # CSS styles
-│ └── main.css
-├── components/ # JS UI components
-│ ├── searchBar.js
-│ ├── colorCard.js
-│ └── ...
-├── utils/ # Utility scripts
-│ ├── debounce.js
-│ └── domHelper.js
-├── app.js # App entry point
-├── README.md # Project documentation
-└── LICENSE # Open source license
+```
+ColorCraft/
+├── index.html            # Main HTML file
+├── styles/               # CSS styles
+│   └── main.css
+├── components/           # JS UI components
+│   ├── searchBar.js
+│   ├── colorCard.js
+│   ├── favorites.js
+│   ├── download.js
+│   ├── theme.js
+│   └── searchHandler.js
+├── utils/                # Utility scripts
+│   ├── debounce.js
+│   ├── domHelper.js
+│   ├── clearHandler.js
+│   └── loader.js
+├── app.js                # App entry point
+├── README.md             # Project documentation
+└── LICENSE               # Open source license
+```
 
 ## ⚠️ Disclaimer
 
