@@ -2,8 +2,8 @@ const CACHE_NAME = "colorcraft-cache-v1";
 const urlsToCache = [
   "/",
   "/index.html",
-  "/style.css",
-  "/app.js",
+  "/style.min.css",
+  "/app.min.js",
   "/favicon.png",
   "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css",
 ];
