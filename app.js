@@ -8,7 +8,7 @@ import {
 import { setupThemeToggle } from "./components/theme.js";
 import { renderHistory } from "./components/history.js";
 import { attachClearHandler } from "./utils/clearHandler.js";
-import { HISTORY_KEY, FAVORITES_KEY } from "../utils/constants.js";
+import { HISTORY_KEY, FAVORITES_KEY } from "./utils/constants.js";
 
 import { animateAction } from "./utils/loader.js";
 import { handleSearch } from "./components/searchHandler.js";
