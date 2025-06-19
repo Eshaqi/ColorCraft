@@ -28,8 +28,7 @@
 ## 🖥️ Live Demo
 
 You can try the app here:  
-👉 [https://eshaqi.github.io/ColorCraft](https://eshaqi.github.io/ColorCraft)
-
+👉 [https://color-craft-palette.vercel.app](https://color-craft-palette.vercel.app)
 
 ---
 
@@ -69,7 +68,7 @@ ColorCraft/
 ├── README.md             # Project documentation
 ├── service-worker.js
 ├── style.css               # CSS styles
-├── style.min.css 
+├── style.min.css
 ```
 
 ## ⚠️ Disclaimer
