@@ -43,10 +43,7 @@ export function createSearchBar() {
     }
   });
 
-  // Font Awesome info icon for tooltip
-  /* const infoIcon = document.createElement("i");
-  infoIcon.className = "fas fa-info-circle search-info-icon";
-  infoIcon.title = "Examples: #3498db or rgb(52,152,219)"; */
+  // info icon for tooltip
 
   const infoIconWrapper = createElementWithClass("div", "tooltip-wrapper");
   const infoIcon = document.createElement("i");
@@ -54,17 +51,19 @@ export function createSearchBar() {
 
   const tooltipText = createElementWithClass("div", "custom-tooltip");
   tooltipText.textContent = "Examples: #3498db or rgb(52,152,219)";
-  tooltipText.style.display = "none";
+
+  // Mobile-only: Toggle tooltip on tap/click
 
   infoIcon.addEventListener("click", (e) => {
-    e.stopPropagation();
-    tooltipText.style.display =
-      tooltipText.style.display === "none" ? "block" : "none";
+    if (window.matchMedia("(hover: none)").matches) {
+      e.stopPropagation();
+      tooltipText.classList.toggle("visible");
+    }
   });
 
   // Hide tooltip on outside click
   document.addEventListener("click", () => {
-    tooltipText.style.display = "none";
+    tooltipText.classList.remove("visible");
   });
 
   appendChildren(infoIconWrapper, infoIcon, tooltipText);
