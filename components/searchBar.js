@@ -44,9 +44,30 @@ export function createSearchBar() {
   });
 
   // Font Awesome info icon for tooltip
+  /* const infoIcon = document.createElement("i");
+  infoIcon.className = "fas fa-info-circle search-info-icon";
+  infoIcon.title = "Examples: #3498db or rgb(52,152,219)"; */
+
+  const infoIconWrapper = createElementWithClass("div", "tooltip-wrapper");
   const infoIcon = document.createElement("i");
   infoIcon.className = "fas fa-info-circle search-info-icon";
-  infoIcon.title = "Examples: #3498db or rgb(52,152,219)";
+
+  const tooltipText = createElementWithClass("div", "custom-tooltip");
+  tooltipText.textContent = "Examples: #3498db or rgb(52,152,219)";
+  tooltipText.style.display = "none";
+
+  infoIcon.addEventListener("click", (e) => {
+    e.stopPropagation();
+    tooltipText.style.display =
+      tooltipText.style.display === "none" ? "block" : "none";
+  });
+
+  // Hide tooltip on outside click
+  document.addEventListener("click", () => {
+    tooltipText.style.display = "none";
+  });
+
+  appendChildren(infoIconWrapper, infoIcon, tooltipText);
 
   //Search button
   const button = createElementWithClass("button", "search-button");
@@ -55,7 +76,7 @@ export function createSearchBar() {
   button.ariaLabel = "Search for color";
 
   // Append everything to the main container
-  appendChildren(container, input, button, infoIcon);
+  appendChildren(container, input, button, infoIconWrapper);
 
   let searchHandler = () => {};
 
