@@ -50,7 +50,8 @@ export function createSearchBar() {
   infoIcon.className = "fas fa-info-circle search-info-icon";
 
   const tooltipText = createElementWithClass("div", "custom-tooltip");
-  tooltipText.textContent = "Examples: #3498db or rgb(52,152,219)";
+  tooltipText.textContent =
+    "Examples: #3498db or rgb(52,152,219)\nOr use color box under the search input";
 
   // Mobile-only: Toggle tooltip on tap/click
 

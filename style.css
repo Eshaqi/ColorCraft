@@ -102,6 +102,10 @@ header {
   gap: 15px;
 }
 
+.color-picker-container {
+  margin-top: -15px;
+}
+
 .search-bar {
   display: flex;
   align-items: center;
@@ -127,13 +131,13 @@ header {
 }
 
 .color-picker {
-  width: 150px;
-  height: 40px;
+  width: 200px;
+  height: 20px;
   border: none;
   border-radius: 6px;
   background: none;
   cursor: pointer;
-  margin-left: 8px;
+  margin-left: -50px;
   padding: 0;
   display: flex;
   justify-content: flex-start;
@@ -206,6 +210,8 @@ header {
   white-space: nowrap;
   z-index: 1000;
   display: none;
+  white-space: pre;
+  word-break: normal;
 }
 
 /* Click-based toggle for mobile */
